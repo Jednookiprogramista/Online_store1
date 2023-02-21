@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Greengrocery Store</title>
+</head>
+<body>
+    <section class="products">
+        <h1>Shop list</h1>
+        <ul class="products-list">
+            <li>
+                <strong>Egg 🍳</strong> - 1.00zł <button class="btn-buy-product" data-name=">Egg" data-price="1.00">Buy!</button>
+            </li>
+            <li>
+                <strong>Tomato 🍅</strong> - 4.00zł <button class="btn-buy-product" data-name="Tomato" data-price="4.00">Buy!</button>
+            </li>
+            <li>
+                <strong>Cucumber 🥒</strong> - 6.50zł <button class="btn-buy-product" data-name="Cucumber" data-price="3.50">Buy!</button>
+            </li>
+        </ul>
+    </section>
+    <section class="basket">
+        <h1>Cart 🛒</h1>
+        <ul class="basket-list"></ul>
+        <button class="btn-buy-all" disabled>Submit your order</button>
+    </section>
+    <section class="admin-add-product">
+        <p style="font-size: 15px">You could delete your items by clicking on them 🔎</p>
+        <h1>Administration: Add product 👨‍💻</h1>
+        <form class="form-add-product">
+            <input type="text" name="product-name" placeholder="Provide name of product..." required>
+
+            <input type="number" name="product-price" placeholder="Provide price of product..." required>
+            <button type="submit">Add</button>
+            <br><br>
+            <p>Refresh to reset all data ⚠</p>
+        </form>
+    </section>
+
+    <script src="src/basket.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/admin-ui.js"></script>
+</body>
+</html>
